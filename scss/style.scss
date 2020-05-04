@@ -7,4 +7,45 @@ body {
   h2 {
     font-weight: 900;
   }
+
+  a {
+    color: #c2c2c2;
+  }
+
+  .cta {
+    background: mediumslateblue;
+    padding: 1rem;
+  }
+}
+
+.header {
+  background: #2b2b2b;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1rem;
+
+  .navlist {
+    display: flex;
+
+    .navlink {
+      margin: .5rem;
+      padding: .5rem;
+    }
+  }
+}
+
+.banner {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  height: 66vh;
+  justify-content: center;
+}
+
+#intro {
+  
+}
+
+.footer {
+  background: #2b2b2b;
 }
