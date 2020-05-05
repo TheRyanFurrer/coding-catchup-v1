@@ -1,22 +1,33 @@
+
+
+
+$background: #c2eabd;
+$color: #011936;
+$color-light: #31475E;
+$accent: #363767;
+$accent-light: #8789C0;
+
 body {
-  background: #222;
-  color: #f2f2f2;
-  font-family: Arial, Helvetica, sans-serif;
+  background: $background;
+  color: $color;
+  font-family: 'Montserrat', sans-serif;
 
   h1,
   h2 {
-    font-weight: 900;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
   }
 
   a {
-    color: #c2c2c2;
+    color: $color;
   }
 
   .cta-container {
     margin: 1.25rem 0;
 
     .cta {
-      background: mediumslateblue;
+      background: $accent;
+      color: $background;
       padding: 1rem;
       text-decoration: none;
     }
@@ -25,13 +36,12 @@ body {
 
 .header {
   align-items: center;
-  background: #2b2b2b;
   display: flex;
   justify-content: space-around;
   padding: .5rem;
 
-  .logo a,
-  .navlink {
+  .logo a {
+    font-size: 2rem;
     text-decoration: none;
   }
 
@@ -43,8 +53,8 @@ body {
       padding: .5rem;
 
     &:hover {
-      outline: 2px dotted #f2f2f2;
-      color: #f2f2f2;
+      // border-bottom: 2px solid $color-light;
+      color: $color-light;
     }
     }
   }
@@ -81,6 +91,11 @@ section {
   article {
     margin: 0 auto;
     padding-bottom: 5rem;
+
+    .unimportant {
+      color: $color-light;
+      margin-top: 0;
+    }
   }
 }
 
@@ -94,9 +109,7 @@ section {
   }
 }
 
-.footer {
-  background: #2b2b2b;
-}
+/* Media Queries */
 
 @media screen and (min-width: 1000px) {
   #intro,
