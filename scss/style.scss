@@ -13,7 +13,7 @@ body {
   }
 
   .cta-container {
-    margin-top: 1.25rem;
+    margin: 1.25rem 0;
 
     .cta {
       background: mediumslateblue;
@@ -30,12 +30,22 @@ body {
   justify-content: space-around;
   padding: .5rem 0;
 
+  .logo a,
+  .navlink {
+    text-decoration: none;
+  }
+
   .navlist {
     display: flex;
 
     .navlink {
       margin: .5rem;
       padding: .5rem;
+
+    &:hover {
+      outline: 2px dotted #f2f2f2;
+      color: #f2f2f2;
+    }
     }
   }
 }
@@ -48,17 +58,48 @@ body {
   justify-content: center;
 }
 
+section {
+  margin: 0 auto;
+  padding: 5rem 0;
+  width: 95%;
+
+  h2 {
+    padding-bottom: 2.5rem;
+  }
+
+  &#intro {
+    display: flex;
+    margin: 0 auto;
+
+    #intro-text,
+    #intro-image {
+      padding: 1rem;
+      width: 50%;
+    }
+  }
+
+  article {
+    margin: 0 auto;
+    padding-bottom: 5rem;
+  }
+}
+
 #intro {
   display: flex;
-  width: 100%;
+  margin: 0 auto;
   
   #intro-text,
   #intro-image {
-    margin: 3rem;
     width: 50%;
   }
 }
 
 .footer {
   background: #2b2b2b;
+}
+
+@media screen and (min-width: 1000px) {
+  #recent-posts {
+    width: 65%;
+  }
 }

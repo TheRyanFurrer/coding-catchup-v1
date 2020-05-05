@@ -61,6 +61,10 @@ img {
   display: block;
 }
 
+section {
+  margin: 2rem 0;
+}
+
 /* Natural flow and rhythm in articles by default */
 article > * + * {
   margin-top: 1em;
