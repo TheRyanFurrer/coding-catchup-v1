@@ -30,6 +30,12 @@ body {
       color: $background;
       padding: 1rem;
       text-decoration: none;
+
+      &:hover {
+        background: none;
+        color: $accent;
+        outline: .25rem solid $accent;
+      }
     }
   }
 }
@@ -38,7 +44,7 @@ body {
   align-items: center;
   display: flex;
   justify-content: space-around;
-  padding: .5rem;
+  padding: 3vw;
 
   .logo a {
     font-size: 2rem;
@@ -55,6 +61,7 @@ body {
     &:hover {
       // border-bottom: 2px solid $color-light;
       color: $color-light;
+      outline: .25rem dotted $color;
     }
     }
   }
@@ -66,6 +73,15 @@ body {
   flex-flow: column;
   height: 66vh;
   justify-content: center;
+
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
 }
 
 section {
