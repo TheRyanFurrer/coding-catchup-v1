@@ -60,9 +60,8 @@ body {
       padding: .5rem;
 
     &:hover {
-      // border-bottom: 2px solid $color-light;
       color: $color-light;
-      outline: .25rem dotted $color;
+      outline: .15rem dotted $color;
     }
     }
   }
