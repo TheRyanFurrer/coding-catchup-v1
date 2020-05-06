@@ -18,6 +18,7 @@ body {
     font-weight: 700;
   }
 
+
   a {
     color: $color;
   }
@@ -28,7 +29,7 @@ body {
     .cta {
       background: $accent;
       color: $background;
-      padding: 1rem;
+      padding: .75rem;
       text-decoration: none;
 
       &:hover {
@@ -47,7 +48,7 @@ body {
   padding: 3vw;
 
   .logo a {
-    font-size: 2rem;
+    // font-size: 2rem;
     text-decoration: none;
   }
 
@@ -73,14 +74,10 @@ body {
   flex-flow: column;
   height: 66vh;
   justify-content: center;
+  text-align: center;
 
   h1 {
-    font-size: 4rem;
     margin-bottom: 1rem;
-  }
-
-  h3 {
-    font-size: 2rem;
   }
 }
 

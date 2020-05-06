@@ -29,11 +29,48 @@ dd {
   margin: 0;
 }
 
+/* Define minimum font size */
+html {
+  font-size:1rem;
+}
+
+ /* Define breakpoints and font sizes */
+@media (min-width:640px) and (max-width:1023px) {
+  html {
+  font-size: 1.0625rem;
+  }
+}
+
+@media (min-width:1024px) and (max-width:1279px) {
+  html {
+  font-size: 1.125rem;
+  }
+}
+
+ /* Define max font size and viewport */
+@media (min-width:1280px) {
+  html {
+  font-size: 1.1875rem;
+  }
+}
+
+/* Define font sizes */
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
 /* Set core body defaults */
 body {
   display: flex;
   flex-direction: column;
-  font-size: min(max(16px, 2.2vw), 22px);
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
