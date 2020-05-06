@@ -1,6 +1,4 @@
 
-
-
 $background: #c2eabd;
 $color: #011936;
 $color-light: #31475E;
@@ -48,7 +46,6 @@ body {
   padding: 3vw;
 
   .logo a {
-    // font-size: 2rem;
     text-decoration: none;
   }
 
@@ -61,7 +58,6 @@ body {
 
     &:hover {
       color: $color-light;
-      outline: .15rem dotted $color;
     }
     }
   }
@@ -126,8 +122,15 @@ section {
   }
 }
 
-/* Media Queries */
+aside {
+  text-align: center;
+  i {
+    font-size: 2rem;
+    margin: 0 .5rem;
+  }
+}
 
+/* Media Queries */
 @media screen and (min-width: 1000px) {
   #intro,
   #recent-posts {
