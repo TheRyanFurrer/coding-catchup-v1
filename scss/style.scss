@@ -63,8 +63,8 @@ body {
     display: flex;
 
     .navlink {
-      margin: .5rem;
-      padding: .5rem;
+      margin: .75rem;
+      text-decoration: none;
     }
   }
 }
@@ -141,6 +141,10 @@ aside {
   main {
     margin: 0 auto;
     width: 65%;
+
+    #recent-posts {
+      width: 50%;
+    }
   }
 
   .banner {
