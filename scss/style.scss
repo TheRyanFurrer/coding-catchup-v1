@@ -1,5 +1,6 @@
 
 $background: #c2eabd;
+$background-dark: #88A884;
 $color: #011936;
 $color-light: #31475E;
 $accent: #363767;
@@ -30,7 +31,7 @@ body {
 
     .cta {
       background: $accent;
-      color: $DEFCD9;
+      color: #DEFCD9;
       font-size: .75rem;
       font-weight: 700;
       padding: .75rem;
@@ -39,7 +40,7 @@ body {
       &:hover {
         background: none;
         color: $accent;
-        outline: .25rem solid $accent;
+        outline: 1px solid $accent;
       }
     }
   }
@@ -109,20 +110,33 @@ section {
 
   article {
     margin: 0 auto 5rem auto;
+    outline: 1px solid $accent;
     padding: 2.5rem 2.5rem;
-    // padding-bottom: 5rem;
     transition: box-shadow .2s ease-in-out;
 
     &:hover {
       background: #DEFCD9;
-      box-shadow: -20px 20px $accent;
-      outline: $background;
+      box-shadow: -2vh 2vh $accent;
     }
 
     .unimportant {
       color: $color-light;
       margin-top: 0;
     }
+  }
+}
+
+#blog-post-container {
+
+  &:hover {
+    background: $background;
+    box-shadow: none;
+
+  }
+
+  .blog-image {
+    margin: 8vw auto;
+    outline: 5px solid #fff;
   }
 }
 
@@ -146,6 +160,27 @@ aside {
 
 /* Media Queries */
 @media screen and (min-width: 1000px) {
+  main {
+    margin: 0 auto;
+    width: 75%;
+    
+    #recent-posts {
+      // width: 65%;
+    }
+
+    
+  }
+  #blog-post-container {
+
+    .blog-image {
+      margin: 4vw auto;
+      width: 65%;
+    }
+
+  }
+}
+
+@media screen and (min-width: 1441px) {
   main {
     margin: 0 auto;
     width: 65%;
