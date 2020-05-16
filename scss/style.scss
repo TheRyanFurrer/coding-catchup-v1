@@ -4,12 +4,14 @@
 // $color: #011936;
 // $color-light: #31475E;
 // $accent: #363767;
+// $link-hover: #b01028;
 
 $background: #011936;
 $background-light: #19253d;
 $color: #C2EABD;
 $color-light: #9BBE97;
 $accent: #8789C0;
+$link-hover: #f9dc5c;
 
 body {
   background: $background;
@@ -27,19 +29,19 @@ body {
     color: $color;
 
     &:hover {
-      color: $color-light;
+      color: $link-hover;
     }
   }
 
   .cta-container {
-    margin: 1.25rem 0;
+    margin: 1em 0;
 
     .cta {
       background: $accent;
       color: $background;
-      font-size: .75rem;
+      font-size: clamp(14px, 2.2vw, 18px);
       font-weight: 700;
-      padding: .75rem;
+      padding: .75em;
       text-decoration: none;
 
       &:hover {
@@ -69,7 +71,7 @@ body {
     display: flex;
 
     .navlink {
-      margin: .75rem;
+      margin: .75em;
       text-decoration: none;
     }
   }
@@ -84,22 +86,17 @@ body {
   text-align: center;
 
   h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-
-  h3 {
-    font-size: 1.25rem;
+    margin-bottom: .15em;
   }
 }
 
 section {
   margin: 0 auto;
-  padding: 5rem 0;
+  padding: 5em 0;
   width: 95%;
 
   h2 {
-    padding-bottom: 2.5rem;
+    padding-bottom: 2.5em;
   }
 
   &#intro {
@@ -108,15 +105,15 @@ section {
 
     #intro-text,
     #intro-image {
-      padding: 1rem;
+      padding: 1em;
       width: 50%;
     }
   }
 
   article {
-    margin: 0 auto 5rem auto;
+    margin: 0 auto 5em auto;
     outline: 1px solid $accent;
-    padding: 2.5rem 2.5rem;
+    padding: 2em 2em;
     transition: box-shadow .2s ease-in-out;
 
     &:hover {
@@ -140,7 +137,7 @@ section {
   }
 
   .blog-image {
-    margin: 8vw auto;
+    margin: 4vw auto;
     outline: 5px solid #fff;
   }
 }
@@ -157,50 +154,36 @@ section {
 
 aside {
   text-align: center;
+
   i {
-    font-size: 2rem;
-    margin: 0 .5rem;
+    
+    font-size: clamp(32px, 2.2vw, 48px);
+    margin: 0 .5em;
   }
 }
 
 /* Media Queries */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
   main {
     margin: 0 auto;
     width: 75%;
-    
-    #recent-posts {
-      // width: 65%;
-    }
-
-    
   }
-  #blog-post-container {
 
-    .blog-image {
-      margin: 4vw auto;
-      width: 65%;
-    }
-
+  .blog-image {
+    margin: 6vw auto;
+    width: 85%;
   }
 }
 
 @media screen and (min-width: 1441px) {
   main {
     margin: 0 auto;
-    width: 65%;
-
-    #recent-posts {
-      width: 50%;
-    }
+    width: 75%;
+    max-width: 1235px;
   }
 
-  .banner {
-    h1 {
-      font-size: 3.5rem;
-    }
-    h3 {
-      font-size: 1.5rem;
-    }
+  
+  .blog-image {
+    margin: 8vw auto;
   }
 }

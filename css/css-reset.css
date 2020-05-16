@@ -31,40 +31,23 @@ dd {
 
 /* Define minimum font size */
 html {
-  font-size:1rem;
+  font-size: 16px;
 }
 
- /* Define breakpoints and font sizes */
-@media (min-width:640px) and (max-width:1023px) {
-  html {
-  font-size: 1.0625rem;
-  }
-}
-
-@media (min-width:1024px) and (max-width:1279px) {
-  html {
-  font-size: 1.125rem;
-  }
-}
-
- /* Define max font size and viewport */
-@media (min-width:1280px) {
-  html {
-  font-size: 1.1875rem;
-  }
-}
-
-/* Define font sizes */
-h1 {
-  font-size: 3.5rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
+body {
+  font-size: clamp(16px, 2.2vw, 24px);
+} 
 
 h3 {
-  font-size: 1.5rem;
+  font-size: clamp(24px, 2.2vw, 30px);
+} 
+
+h2 {
+  font-size: clamp(32px, 2.2vw, 46px);
+} 
+
+h1 {
+  font-size: clamp(40px, 2.2vw, 52px);
 }
 
 /* Set core body defaults */
