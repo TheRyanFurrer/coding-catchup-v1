@@ -119,7 +119,7 @@ section {
     transition: box-shadow .2s ease-in-out;
 
     &:hover {
-      background: --background-light;
+      background: var(--background-light);
       box-shadow: -2vh 2vh var(--accent);
     }
 
