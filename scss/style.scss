@@ -1,4 +1,5 @@
 
+// Light Theme
 // $background: #C2EABD;
 // $background-light: #DEFCD9;
 // $color: #011936;
@@ -6,16 +7,17 @@
 // $accent: #363767;
 // $link-hover: #b01028;
 
-$background: #011936;
-$background-light: #19253d;
-$color: #C2EABD;
-$color-light: #9BBE97;
-$accent: #8789C0;
-$link-hover: #f9dc5c;
+// Dark Theme (Default)
+// $background: #011936;
+// $background-light: #19253d;
+// $color: #C2EABD;
+// $color-light: #9BBE97;
+// $accent: #8789C0;
+// $link-hover: #f9dc5c;
 
 body {
-  background: $background;
-  color: $color;
+  background: var(--background);
+  color: var(--color);
   font-family: 'Montserrat', sans-serif;
 
   h1,
@@ -26,10 +28,10 @@ body {
 
 
   a {
-    color: $color;
+    color: var(--color);
 
     &:hover {
-      color: $link-hover;
+      color: var(--link-hover);
     }
   }
 
@@ -37,8 +39,8 @@ body {
     margin: 1em 0;
 
     .cta {
-      background: $accent;
-      color: $background;
+      background: var(--accent);
+      color: var(--background);
       font-size: clamp(14px, 2.2vw, 18px);
       font-weight: 700;
       padding: .75em;
@@ -46,8 +48,8 @@ body {
 
       &:hover {
         background: none;
-        color: $accent;
-        outline: 1px solid $accent;
+        color: var(--accent);
+        outline: 1px solid var(--accent);
       }
     }
   }
@@ -112,17 +114,17 @@ section {
 
   article {
     margin: 0 auto 5em auto;
-    outline: 1px solid $accent;
+    outline: 1px solid var(--accent);
     padding: 2em 2em;
     transition: box-shadow .2s ease-in-out;
 
     &:hover {
-      background: $background-light;
-      box-shadow: -2vh 2vh $accent;
+      background: --background-light;
+      box-shadow: -2vh 2vh var(--accent);
     }
 
     .unimportant {
-      color: $color-light;
+      color: var(--color-light);
       margin-top: 0;
     }
   }
@@ -131,7 +133,7 @@ section {
 #blog-post-container {
 
   &:hover {
-    background: $background;
+    background: var(--background);
     box-shadow: none;
 
   }

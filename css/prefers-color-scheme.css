@@ -1,0 +1,18 @@
+:root {
+  --background: #011936;
+  --background-light: #19253d;
+  --color: #C2EABD;
+  --color-light: #9BBE97;
+  --accent: #8789C0;
+  --link-hover: #f9dc5c;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #C2EABD;
+    --background-light: #DEFCD9;
+    --color: #011936;
+    --color-light: #31475E;
+    --accent: #363767;
+    --link-hover: #b01028;}
+}
