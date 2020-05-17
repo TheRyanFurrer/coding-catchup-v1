@@ -26,6 +26,38 @@ body {
     font-weight: 700;
   }
 
+  figcaption {
+    font-size: smaller;
+    margin-top: -1.5em;
+    text-align: center;
+  }
+
+  .cross-post-text {    
+    background: var(--link-hover);
+    color: var(--background);
+    padding: .5em 0;
+    text-align: center;
+
+    a {
+      color: var(--background);
+
+      &:hover {
+        color: inherit;
+      }
+    }
+  }
+
+  .link-dump-container {
+    background: var(--background-light);
+    margin: 1.5em auto;
+    padding: 1em;
+    width: 60%;
+
+    li {
+      text-align: left;
+    }
+  }
+
 
   a {
     color: var(--color);
@@ -98,7 +130,8 @@ section {
   width: 95%;
 
   h2 {
-    padding-bottom: 2.5em;
+    margin-top: 2.5rem;
+    margin-bottom: 1em;
   }
 
   &#intro {
