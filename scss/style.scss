@@ -115,13 +115,17 @@ body {
   align-items: center;
   display: flex;
   flex-flow: column;
-  height: 66vh;
+  height: 33vh;
   justify-content: center;
   text-align: center;
 
   h1 {
     margin-bottom: .15em;
   }
+}
+
+#home-banner {
+  height: 66vh;
 }
 
 section {
